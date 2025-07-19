@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:purple;
+            --secondary-color:blue;
+            --font-size:60px;
+        }
+        h1{
+            color:var(--primary-color);
+        }
+        h5{
+            border:var(--primary-color);
+        }
+        .box{
+            border: 2px solid var(--primary-color);
+        }
+        .box {
+            color: var(--primary-color);
+            font-size: var(--font-size);
+            width: cal(100% -300px);
+        }
+        .sidebar{
+            background-color: lightsalmon;
+        }
+        .content{
+            background-color: lightgray;
+        }
+        .container{
+            display: grid;
+            gap:20px;
+            grid-template-columns: 200px  calc(100% -200px -20px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Coustom Property and use variable</h1>
+    <h5>Also commonly use o variable</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus error blanditiis hic dolor officiis non
+            nisi sunt placeat consequuntur numquam. Maiores, earum ut aspernatur vel sed ratione accusantium. Odio,
+            natus!</p>
+    </div>
+    <div class="contaner">
+       <div class="sidebar">Sidebar</div>
+       <div class="content">Main Bar</div>
+
+    </div>
+</body>
+
+</html>
